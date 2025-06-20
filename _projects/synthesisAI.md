@@ -1,6 +1,6 @@
 ---
 title: "SynthesisAI: Knowledge Synthesis in Collaborative Learning"
-image: /images/projects/synthesisAI.png
+image: /projects/synthesisAI.png
 excerpt: "A tool driven by GenAI and learning analytics techniques, designed to support knowledge synthesis in collaborative learning"
 members:
   - Ishita Asnani
@@ -34,7 +34,7 @@ We use *co-design* methods to develop and implement the tool in both lab and rea
 [[Tutorial](https://drive.google.com/file/d/1DskypRQT-itHNTaYfOKusy2W7FibVxjB/view?usp=sharing)]
 
 Screenshot of the interface: 
-<img src='/images/projects/synthesislab.png'>
+<img src='{{ site.baseurl }}/images/projects/synthesislab.png'>
 
 [See this paper for more details aboutthe Synthesis Lab](https://doi.org/10.1145/3584931.3606996)
 

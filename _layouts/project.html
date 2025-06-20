@@ -16,7 +16,7 @@ sidebar: false
         {% if member %}
         <div style="display:flex;align-items:center;gap:0.7rem;margin-top:0.5rem">
           {% if member.image %}
-            <img src="{{ member.image }}" alt="{{ member.name }}" style="width:20px;height:20px;border-radius:50%;object-fit:cover;">
+            <img src="{{ site.baseurl }}/images/{{ member.image }}" alt="{{ member.name }}" style="width:20px;height:20px;border-radius:50%;object-fit:cover;">
           {% else %}
             <span style="width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;background:#eee;border-radius:50%;font-size:1.1em;color:#aaa;">
               <i class="fa-solid fa-user"></i>

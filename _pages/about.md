@@ -47,4 +47,4 @@ I develop analytical frameworks and models to depict learning engagement and col
   {% endfor %}
 </div>
 
-<script src="/assets/js/travels-preview.js"></script>
+<script src="{{ site.baseurl }}/assets/js/travels-preview.js"></script>

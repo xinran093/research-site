@@ -38,7 +38,7 @@ sidebar: false
           <div style="width: 260px; background: #fff; border-radius: 0.7rem; padding: 0 0 2rem 0; display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2.2rem; font-family: 'Inter', sans-serif;">
             {% if project.image %}
               <a href="{{ project.url | relative_url }}" class="project-card-img-link" style="display:block;">
-                <img src="{{ project.image }}" alt="{{ project.title }} image" style="width:260px; height:260px; object-fit:cover; border-radius:0.4rem 0.4rem 0 0; margin-bottom:2rem; background:#eee;" />
+                <img src="{{ site.baseurl }}/images/{{ project.image }}" alt="{{ project.title }} image" style="width:260px; height:260px; object-fit:cover; border-radius:0.4rem 0.4rem 0 0; margin-bottom:2rem; background:#eee;" />
               </a>
             {% else %}
               <a href="{{ project.url | relative_url }}" class="project-card-img-link" style="display:block;">
@@ -156,7 +156,7 @@ sidebar: false
    <div style="display:flex; flex-direction:row; align-items:center; margin-bottom:2rem; width:100%; min-height:44px; margin-left:0.7rem;">
     {% if member.image and member.image != '' %}
       <span style="display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; border:2px solid #e0e0e0; background:#f0f0f0; flex-shrink:0;">
-  <img src="{{ member.image }}" alt="{{ member.name }}" style="width:40px; height:40px; border-radius:50%; object-fit:cover; display:block;" />
+  <img src="{{ site.baseurl }}/images/{{ member.image }}" alt="{{ member.name }}" style="width:40px; height:40px; border-radius:50%; object-fit:cover; display:block;" />
 </span>
     {% else %}
       <span style="display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; border:2px solid #e0e0e0; background:#f0f0f0; flex-shrink:0;">

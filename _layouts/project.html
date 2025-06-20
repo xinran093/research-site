@@ -1,0 +1,52 @@
+---
+layout: default
+sidebar: false
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<article class="project-detail" style="max-width: 800px; margin: 0 auto; font-family: 'Inter', sans-serif; font-weight: 400;">
+  <h1 style=font-weight:600;>{{ page.title }}</h1>
+  
+
+
+  {% if page.members %}
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;font-weight:400">
+      {% for member_key in page.members %}
+        {% assign member = site.data.team | where: "name", member_key | first %}
+        {% if member %}
+        <div style="display:flex;align-items:center;gap:0.7rem;margin-top:0.5rem">
+          {% if member.image %}
+            <img src="{{ member.image }}" alt="{{ member.name }}" style="width:20px;height:20px;border-radius:50%;object-fit:cover;">
+          {% else %}
+            <span style="width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;background:#eee;border-radius:50%;font-size:1.1em;color:#aaa;">
+              <i class="fa-solid fa-user"></i>
+            </span>
+          {% endif %}
+          <div>
+            <div style="font-size:14px;">{{ member.name }}</div>
+          </div>
+        </div>
+        {% else %}
+        <div style="display:flex;align-items:center;gap:0.7rem;">
+          <div>{{ member_key }}</div>
+          <div style="font-size:0.95em;color:#666;">(Profile not found)</div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.tags %}
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:2rem;">
+      {% for tag in page.tags %}
+        <span style="display:inline-flex;align-items:center;border:0.5px solid #666;padding:0.2em 0.2em;border-radius:0.2em;font-size:12px;font-family:'Inter',sans-serif;font-weight:400;background:#fff;color:#666;line-height:1.1;letter-spacing:0.04em;text-transform:uppercase;">
+          {{ tag }}
+        </span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="project-description" style="margin-top:0rem; font-size: 18px;">
+    {{ content }}
+  </div>
+</article>

@@ -16,7 +16,14 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <div class="site-container">
+      {% unless page.sidebar == false %}
+        {% include sidebar.html %}
+      {% endunless %}
+      <main class="page__main">
+        {{ content }}
+      </main>
+    </div>
 
     <div class="page__footer">
       <footer>

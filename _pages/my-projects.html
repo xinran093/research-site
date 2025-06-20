@@ -1,0 +1,189 @@
+---
+title: "Projects"
+permalink: /my-projects/
+layout: default
+sidebar: false
+---
+
+<h1 style="text-align:center; margin-top:2rem;">Projects / Research Areas</h1>
+<div class="intro-responsive-text" style="text-align:justify; color:#555; margin-bottom:3.5rem;margin-left:15rem;margin-right:15rem;margin-top:2em;">
+  From an ecological perspective on learning, our research program recognizes the rich, dynamic, and interconnected system where knowledge emerges from interactions between students, knowledge artifacts, digital technologies, as well as their interdependencies. <br>
+  <br> We focus on designing and investigating the integration of digital technologies within collaborative learning environments, with the goal of supporting productive interactions and knowledge creation in authentic classroom settings.</div>
+
+<style>
+@media (max-width: 900px) {
+  .intro-responsive-text {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .intro-responsive-text {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+    font-size: 0.99rem !important;
+  }
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<div class="project-flex-main" style="display: flex; flex-wrap: nowrap; gap: 2.5rem; justify-content: center; align-items: stretch; margin-left:5em; min-height: 100vh;">
+  <!-- Main content: project cards -->
+  <div style="flex: 0 0 70%; min-width: 0; max-width: 70%;">
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: flex-start;">
+      {% if site.projects and site.projects != empty %}
+        {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+        {% for project in sorted_projects %}
+          <div style="width: 260px; background: #fff; border-radius: 0.7rem; padding: 0 0 2rem 0; display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2.2rem; font-family: 'Inter', sans-serif;">
+            {% if project.image %}
+              <a href="{{ project.url | relative_url }}" class="project-card-img-link" style="display:block;">
+                <img src="{{ project.image }}" alt="{{ project.title }} image" style="width:260px; height:260px; object-fit:cover; border-radius:0.4rem 0.4rem 0 0; margin-bottom:2rem; background:#eee;" />
+              </a>
+            {% else %}
+              <a href="{{ project.url | relative_url }}" class="project-card-img-link" style="display:block;">
+                <div style="width:260px; height:260px; background:#eee; border-radius:0.4rem 0.4rem 0 0; margin-bottom:2rem;"></div>
+              </a>
+            {% endif %}
+            <h2 style="margin:0 0 0.7rem 0; font-size:18px; text-align:left; font-weight:400; line-height:1.18; letter-spacing:0.01em; font-family: adobe-clean,adobe-clean-han-japanese, source-sans-pro, Inter, sans-serif;">
+              <a href="{{ project.url | relative_url }}" style="color:#555555 !important; text-decoration:underline !important; font-family: adobe-clean,adobe-clean-han-japanese, source-sans-pro, Inter, sans-serif;">{{ project.title }}</a>
+            </h2>
+            <div style="color:#666; font-size:14px; text-align:left; line-height:1.2; margin:0; font-family: adobe-clean,adobe-clean-han-japanese, source-sans-pro, Inter, sans-serif;">
+              {{ project.excerpt }}
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div style="text-align:center; color:#888; font-size:1.1rem;">No projects found. Make sure you have files in <code>_projects/</code> and the collection is configured in <code>_config.yml</code>.</div>
+      {% endif %}
+    </div>
+  </div>
+
+  <style>
+  .project-card-img-link img,
+  .project-card-img-link div {
+    transition: transform 0.18s cubic-bezier(.4,1.3,.6,1), box-shadow 0.18s cubic-bezier(.4,1.3,.6,1), filter 0.18s;
+  }
+  .project-card-img-link:hover img,
+  .project-card-img-link:hover div {
+    transform: scale(1.045);
+    box-shadow: 0 8px 32px 0 rgba(60,60,90,0.09), 0 1.5px 6px 0 rgba(60,60,90,0.09);
+    z-index: 2;
+  }
+  @media (max-width: 900px) {
+    .project-flex-main {
+      flex-direction: column !important;
+      min-height: unset !important;
+      margin-left: 0 !important;
+      gap: 1.2rem !important;
+    }
+    .project-flex-main > div,
+    .project-flex-main > aside {
+      max-width: 100% !important;
+      min-width: 0 !important;
+      margin: 0 !important;
+      border-radius: 0.5rem !important;
+      box-shadow: 0 1px 4px rgba(60,60,90,0.06);
+    }
+    .project-flex-main > aside {
+      margin-bottom: 2.2rem !important;
+      padding: 1.1rem 0.5rem 1.3rem 0.5rem !important;
+    }
+    .project-flex-main > div {
+      padding: 0 0.2rem;
+    }
+    .project-flex-main .project-card-img-link img,
+    .project-flex-main .project-card-img-link div {
+      width: 100% !important;
+      max-width: 360px;
+      margin: 0 auto 1.1rem auto !important;
+      height: auto !important;
+      display: block;
+    }
+    .project-flex-main > div > div {
+      width: 100% !important;
+      max-width: 360px;
+      margin: 0 auto 2rem auto !important;
+      border-radius: 0.7rem;
+      text-align: center;
+    }
+    .project-flex-main h2,
+    .project-flex-main h2 a,
+    .project-flex-main > div > div > div {
+      text-align: center !important;
+      font-size: 1.05rem !important;
+    }
+    .project-flex-main .project-card-img-link {
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto !important;
+      display: block;
+    }
+    .project-flex-main aside > div {
+      font-size: 1rem !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .project-flex-main > div > div {
+      max-width: 97vw !important;
+    }
+    .project-flex-main .project-card-img-link img,
+    .project-flex-main .project-card-img-link div {
+      max-width: 97vw !important;
+      height: auto !important;
+    }
+    .project-flex-main > aside {
+      padding: 0.7rem 0.2rem 1rem 0.2rem !important;
+      font-size: 0.98rem !important;
+    }
+    .project-flex-main aside > div {
+      font-size: 0.97rem !important;
+    }
+    .project-flex-main h2,
+    .project-flex-main h2 a {
+      font-size: 1rem !important;
+    }
+  }
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  </style>
+  <!-- Sidebar: research team -->
+  <aside style="flex: 0 0 24%; max-width: 310px; background: #F6F4F2; border-radius: 0.5rem; padding: 1.2rem 1.1rem 1.2rem 1rem; margin-left: 0rem; margin-right: 0.3rem; box-shadow: 0 1px 4px rgba(0,0,0,0.04); min-width:220px; font-family: adobe-clean, adobe-clean-han-japanese, source-sans-pro, Inter, sans-serif; margin-right:5em; height: 100%; min-height: 100vh;">
+    <div style="text-align:left; font-weight:400; font-size:1.1rem; margin-bottom:1.5rem; margin-top:0.5rem; margin-left:0.8rem; letter-spacing:0.04em; font-family:adobe-clean, adobe-clean-han-japanese, Inter, sans-serif; color:#666;text-transform:uppercase; ">Members</div>
+    {% for member in site.data.team %}
+   <div style="display:flex; flex-direction:row; align-items:center; margin-bottom:2rem; width:100%; min-height:44px; margin-left:0.7rem;">
+    {% if member.image and member.image != '' %}
+      <span style="display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; border:2px solid #e0e0e0; background:#f0f0f0; flex-shrink:0;">
+  <img src="{{ member.image }}" alt="{{ member.name }}" style="width:40px; height:40px; border-radius:50%; object-fit:cover; display:block;" />
+</span>
+    {% else %}
+      <span style="display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; border:2px solid #e0e0e0; background:#f0f0f0; flex-shrink:0;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#bbb" style="margin-top:8px;" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M12 14c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z"/>
+        </svg>
+      </span>
+    {% endif %}
+    <div style="display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding-left:0.7rem;">
+      <div style="font-size:17px; color:#2D2D2D; font-weight:400; font-family:adobe-clean, adobe-clean-han-japanese, source-sans-pro, Inter, sans-serif; text-align:left; line-height:1.35; padding:0; margin:0; text-transform:uppercase; letter-spacing:0.01em;font-size:14px;">{{ member.name }}</div>
+      <div style="color:#666; font-size:14px; font-weight:400; font-family:adobe-clean, adobe-clean-han-japanese, source-sans-pro, Inter, sans-serif; line-height:1.35; text-align:left; padding:0; margin:0;">{{ member.role }}</div>
+    </div>
+  </div>
+{% endfor %}
+  </aside>
+</div>
+
+<style>
+@media (max-width: 900px) {
+  .project-flex-main {
+    flex-direction: column !important;
+  }
+  .project-flex-main > aside {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+  }
+}
+</style>

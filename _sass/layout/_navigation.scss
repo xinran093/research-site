@@ -2,6 +2,52 @@
    NAVIGATION
    ========================================================================== */
 
+.masthead {
+  padding-left: 0;
+}
+
+.site-title {
+  position: static;
+  left: auto;
+  top: auto;
+  z-index: auto;
+  background: transparent;
+  text-align: left;
+  margin-right: 2rem;
+}
+
+.masthead__menu {
+  position: static;
+  right: auto;
+  top: auto;
+  width: auto;
+  background: transparent;
+  z-index: auto;
+  text-align: right;
+  margin-left: 0;
+}
+
+@media (max-width: 900px) {
+  .masthead {
+    padding-left: 0;
+  }
+  .site-title {
+    position: static;
+    left: 0;
+    top: 0;
+    text-align: left;
+    display: block;
+  }
+  .masthead__menu {
+    position: static;
+    right: 0;
+    top: 0;
+    text-align: right;
+    display: block;
+  }
+}
+
+
 /*
    Breadcrumb navigation links
    ========================================================================== */
@@ -362,6 +408,83 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
+}
+
+.site-title {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 14.5px;
+  line-height: 17px;
+  letter-spacing: 1.6px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  color: rgb(36, 38, 41);
+  font-weight: normal;
+  background: transparent;
+  border: none;
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav__site-title {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 14.5px;
+  line-height: 17px;
+  letter-spacing: 1.6px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  color: rgb(36, 38, 41);
+  font-weight: normal;
+  background: transparent;
+  border: none;
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.masthead__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#site-nav {
+  flex: 1;
+  text-align: right;
+}
+
+#site-nav .visible-links {
+  display: inline-block;
+}
+
+#site-nav .visible-links .masthead__menu-item {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+#site-nav .visible-links .masthead__menu-item a {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 14.5px;
+  letter-spacing: 1.6px;
+  line-height: 17px;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(36, 38, 41);
+  font-weight: normal;
+  background: transparent;
+  border: none;
+  margin: 0;
+  transition: border-bottom 0.2s;
+}
+
+#site-nav .visible-links .masthead__menu-item a.active,
+#site-nav .visible-links .masthead__menu-item a:focus,
+#site-nav .visible-links .masthead__menu-item a:hover {
+  border-bottom: 1px solid rgb(36, 38, 41);
 }
 
 .nav__sub-title {

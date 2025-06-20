@@ -1,25 +1,34 @@
-{% include base_path %}
-
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
-  {% endif %}
+<div class="sidebar">
+  <div class="author__avatar">
+    <img src="/images/profile.png" alt="Xinran Zhu">
   </div>
-{% endif %}
+  <div class="author__name">Xinran Zhu</div>
+  <div class="author__subtitle">Learning Scientist + Educational Technologist</div>
+  <div class="author__bio" style="margin-bottom: 0.3rem;">Assistant Professor, University of Illinois Urbana-Champaign</div>
+  <div class="sidebar__logo" style="display: flex; justify-content: center; margin-bottom: 0.7rem; margin-top: 0.1rem;">
+    <img src="/images/illinois_logo.png" alt="Illinois Logo" style="width: 100px; height: auto;" />
+  </div>
+  <div class="sidebar__social-links" style="margin-bottom: 1.2rem;margin-top: 2rem; font-family: 'Inter', sans-serif; text-align: left;">
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 0.7em 0 0.6em 0;">
+    <div style="margin-bottom:0.2em;">
+      <a href="https://www.linkedin.com/in/zhu-xinran/" title="LinkedIn" target="_blank" style="font-size: 0.87rem; color: #23272f; text-decoration:none; font-weight: 400; display: inline-block; letter-spacing: 0.04em;">
+        <i class="fab fa-linkedin" style="font-size: 0.87rem; vertical-align: middle; margin-right: 0.45em;"></i>
+        <span style="font-size:0.87em; font-weight:400; vertical-align: middle; text-transform:uppercase; letter-spacing:0.04em;">LinkedIn</span>
+      </a>
+    </div>
+    <div style="margin-bottom:0.2em;">
+      <a href="https://scholar.google.com/citations?hl=en&user=_XKlQEkAAAAJ&view_op=list_works&sortby=pubdate" title="Google Scholar" target="_blank" style="font-size: 0.87rem; color: #23272f; text-decoration:none; font-weight: 400; display: inline-block; letter-spacing: 0.04em;">
+        <i class="fa-brands fa-google-scholar" style="font-size: 0.87rem; vertical-align: middle; margin-right: 0.45em;"></i>
+        <span style="font-size:0.87em; font-weight:400; vertical-align: middle; text-transform:uppercase; letter-spacing:0.04em;">Google Scholar</span>
+      </a>
+    </div>
+    <div style="margin-bottom:0.2em;">
+      <a href="mailto:xrzhu@illinois.edu" title="Email" style="font-size: 0.87rem; color: #23272f; text-decoration:none; font-weight: 400; display: inline-block; letter-spacing: 0.04em;">
+        <i class="fas fa-envelope" style="font-size: 0.87rem; vertical-align: middle; margin-right: 0.45em;"></i>
+        <span style="font-size:0.87em; font-weight:400; vertical-align: middle; text-transform:uppercase; letter-spacing:0.04em;">Email</span>
+      </a>
+    </div>
+  </div>
+
+
+</div>

@@ -23,14 +23,14 @@ $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
 $navicon-height             : 4px;
-$sidebar-link-max-width     : 250px;
+$sidebar-link-max-width     : 220px;
 $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
 :root {
     --global-base-color                 : #{$gray};
     --global-bg-color                   : #fff;
-    --global-footer-bg-color            : #f2f3f3;
+    --global-footer-bg-color            : #ffffff;
     --global-border-color               : #{$lighter-gray};
     --global-dark-border-color          : #bdc1c4;
     --global-code-background-color      : #fafafa;

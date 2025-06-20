@@ -40,7 +40,7 @@ I develop analytical frameworks and models to depict learning engagement and col
   {% for file in travel_images %}
     {% assign ext = file.extname | downcase %}
     {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".gif" %}
-      <a href="{{ file.path | relative_url }}" target="_blank">
+      <a href="{{ file.path | relative_url }}">
         <img src="{{ file.path | relative_url }}" alt="Travel Photo" />
       </a>
     {% endif %}

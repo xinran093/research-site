@@ -23,7 +23,13 @@ sidebar: false
             </span>
           {% endif %}
           <div>
-            <div style="font-size:14px;">{{ member.name }}</div>
+            <div style="font-size:14px;">
+  {% if member.link %}
+    <a href="{{ member.link }}" target="_blank" style="color:#1a0dab;text-decoration:underline;">{{ member.name }}</a>
+  {% else %}
+    {{ member.name }}
+  {% endif %}
+</div>
           </div>
         </div>
         {% else %}

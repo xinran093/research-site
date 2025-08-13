@@ -23,8 +23,8 @@ collections:
     permalink: /:collection/:path/
 
 locale                   : "en-US"
-site_theme               : "default"
-title                    : "Your Name / Site Title"
+site_theme               : ""
+title                    : "Xinran Zhu"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"

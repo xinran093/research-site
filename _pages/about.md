@@ -1,7 +1,7 @@
 ---
 nav_active: about
 permalink: /
-title: "Hi!"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/

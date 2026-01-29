@@ -25,6 +25,8 @@ This project is led by Dr. Xinran Zhu (PI) and Dr. Liam Magee (co-PI), with cont
 
 We use *co-design* methods to develop and implement the tool in both lab and real-world classroom settings. Our research investigates how AI can support and mediate collaborative learning in higher education contexts.
 
+📢 We are excited to announce the alpha release of Synthesis AI Lab (SAIL)! [Check out the project site](https://synthesisai-lab.github.io/).
+
 <h3>Before AI: The Synthesis Lab</h3>
 **The Synthesis Lab** is a precursor to SynthesisAI—an app originally developed by the PI, together with a team of researchers and a developer, in 2023 at the University of Pennsylvania. The app was designed to support students’ knowledge synthesis in collaborative learning, particularly by helping them integrate peer ideas from online discussions such as social annotation.
 <br><br>
@@ -40,6 +42,8 @@ Screenshot of the interface:
 
 <h3>SynthesisAI</h3>
 Building on the current capabilities of the Synthesis Lab, the project develops a GenAI-powered chatbot, SynthesisAI, and integrate it into the knowledge synthesis process within the Synthesis Lab. This new feature has two primary goals: to support students in the synthesis writing and to promote meaningful peer collaboration as an integral part of the overall collaborative knowledge creation experience. 
+
+We are excited to announce the alpha release of Synthesis AI Lab (SAIL)! [Check out the project site](https://synthesisai-lab.github.io/).
 
 <h3>Publications</h3>
 - [empirical] **Zhu, X.** & Chen, B. (2025). [The Evolution of Shared Artifacts in CSCL: A Knowledge Synthesis Intervention for Productive Collaborative Discourse](https://repository.isls.org/handle/1/11856). In Oshima, J., Chen, B., Vogel, F., & Järvelä, J. (Eds.), Proceedings of the 18th International Conference on Computer-Supported Collaborative Learning - CSCL 2025 (pp. 286-290). International Society of the Learning Sciences. 

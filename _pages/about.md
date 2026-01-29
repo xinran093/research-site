@@ -25,7 +25,7 @@ I develop analytical frameworks and models to depict learning engagement and col
 
 
 ### Recent News
-- <strong>Feb 2026:</strong> 📢 We are excited to announce the alpha release of Synthesis AI Lab (SAIL)! More to come![Check out the project site here](https://synthesisai-lab.github.io/).
+- <strong>Feb 2026:</strong> 📢 We are excited to announce the alpha release of Synthesis AI Lab (SAIL)! More to come! [Check out the project site here](https://synthesisai-lab.github.io/).
 - [conference] <strong>June 2025:</strong> Attended ISLS 2025 in Helsinki and presented: paper [The Evolution of Shared Artifacts in CSCL: A Knowledge Synthesis Intervention for Productive Collaborative Discourse](https://osf.io/preprints/edarxiv/rcpj3_v1), symposium [Towards Actionable Collaborative Discourse Analysis: Bridging Advanced Computational Analysis with Practical Implementation](https://osf.io/preprints/osf/m4ste_v1)
 - [conference] <strong>June 2024:</strong> I will attend ISLS 2024 in Buffalo, presenting a symposium: Bridging Social Annotation Practice with Perspectives from the Learning Sciences and CSCL. Check out our website at: https://social-annotation-ed.pubpub.org/isls24-symposium.
 - [conference] <strong>April 2024:</strong> I will attend AERA 2024 in Philadelphia.

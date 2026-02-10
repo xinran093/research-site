@@ -46,8 +46,7 @@ Building on the current capabilities of the Synthesis Lab, the project develops 
 We are excited to announce the alpha release of Synthesis AI Lab (SAIL)! [Check out the project site](https://synthesisai-lab.github.io/).
 
 <h3>Publications</h3>
-- [technical] Shui, B. & Zhu, X. (2026). [Knowledge synthesis graph: An LLM-based approach for modeling student collaborative discourse](
-https://doi.org/10.48550/arXiv.2602.06194). arXiv.
+- [technical] Shui, B. & Zhu, X. (2026). [Knowledge synthesis graph: An LLM-based approach for modeling student collaborative discourse](https://doi.org/10.48550/arXiv.2602.06194). arXiv.
 - [empirical] Zhu, X., Chen, B., & DeLiema, D. (2026). [Advancing collaborative discourse through knowledge synthesis](https://doi.org/10.1007/s11412-025-09463-6). International Journal of Computer-Supported Collaborative Learning, 1-31.
 - [empirical] Zhu, X. & Chen, B. (2025). [The Evolution of Shared Artifacts in CSCL: A Knowledge Synthesis Intervention for Productive Collaborative Discourse](https://repository.isls.org/handle/1/11856). In Oshima, J., Chen, B., Vogel, F., & Järvelä, J. (Eds.), Proceedings of the 18th International Conference on Computer-Supported Collaborative Learning - CSCL 2025 (pp. 286-290). International Society of the Learning Sciences. 
 - [design] Zhu, X., Shui, H., & Chen, B. (2023). [The Synthesis Lab: Empowering collaborative learning in higher education through knowledge synthesis](https://dl-acm-org.proxy2.library.illinois.edu/doi/10.1145/3584931.3606996). Proceedings of Computer Supported Cooperative Work and Social Computing (CSCW’23 Companion) (pp. 245-248).

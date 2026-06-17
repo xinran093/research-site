@@ -1,0 +1,13 @@
+<script src="{{ site.baseurl }}/assets/js/main.min.js"></script>
+
+<script>
+  document.querySelectorAll('a[href]').forEach(function(a) {
+    var href = a.getAttribute('href');
+    if (href && !href.startsWith('#') && !href.startsWith('javascript')) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+</script>
+
+{% include analytics.html %}
